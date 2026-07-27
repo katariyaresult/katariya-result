@@ -28,9 +28,7 @@ heroBtn.addEventListener("click", function(e){
 
 let topBtn = document.getElementById("topBtn");
 
-
 if(topBtn){
-
 
 window.onscroll = function(){
 
@@ -39,7 +37,6 @@ window.onscroll = function(){
         topBtn.style.display="block";
 
     }
-
     else{
 
         topBtn.style.display="none";
@@ -65,16 +62,13 @@ topBtn.onclick = function(){
 
 topBtn.style.display="none";
 
-
 }
-
 
 
 
 // Search Function
 
 let searchBox = document.querySelector(".search input");
-
 
 let items = document.querySelectorAll(
 ".card, .answer-box, .result-box, .job-box, .admit-box"
@@ -84,44 +78,31 @@ let items = document.querySelectorAll(
 
 if(searchBox){
 
-
 searchBox.addEventListener("keyup",function(){
 
-
-let value = searchBox.value.toLowerCase();
-
+    let value = searchBox.value.toLowerCase();
 
 
-items.forEach(function(item){
+    items.forEach(function(item){
+
+        let text = item.innerText.toLowerCase();
 
 
-let text = item.innerText.toLowerCase();
+        if(text.includes(value)){
 
+            item.style.display="block";
 
+        }
+        else{
 
-if(text.includes(value)){
+            item.style.display="none";
 
+        }
 
-item.style.display="block";
-
-
-}
-
-else{
-
-
-item.style.display="none";
-
-
-}
-
+    });
 
 
 });
-
-
-});
-
 
 }
 
@@ -135,14 +116,10 @@ let buttons = document.querySelectorAll(".card button");
 
 buttons.forEach(function(btn){
 
+    btn.addEventListener("click",function(){
 
-btn.addEventListener("click",function(){
+        alert("Latest update page will be available soon!");
 
-
-alert("Latest update page will be available soon!");
-
-
-});
-
+    });
 
 });
