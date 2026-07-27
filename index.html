@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,232 +9,87 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f4f8ff;
-color:#222;
-}
-
-header{
-background:linear-gradient(135deg,#0F172A,#2563EB);
-padding:18px;
-text-align:center;
-color:white;
-box-shadow:0 10px 30px rgba(0,0,0,.2);
-}
-
-.logo{
-font-size:38px;
-font-weight:700;
-color:#FFC107;
-}
-
-.tagline{
-margin-top:5px;
-font-size:15px;
-}
-
-nav{
-background:white;
-display:flex;
-justify-content:center;
-gap:18px;
-flex-wrap:wrap;
-padding:15px;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-position:sticky;
-top:0;
-z-index:999;
-}
-
-nav a{
-text-decoration:none;
-color:#222;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:#2563EB;
-}
-
-.hero{
-padding:60px 20px;
-text-align:center;
-background:linear-gradient(135deg,#2563EB,#0F172A);
-color:white;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-opacity:.9;
-}
-
-.hero button{
-margin-top:25px;
-padding:15px 35px;
-border:none;
-border-radius:50px;
-background:#FFC107;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-transition:.3s;
-}
-
-.hero button:hover{
-transform:scale(1.05);
-}
-
-.breaking{
-background:#dc2626;
-color:white;
-padding:12px;
-font-weight:bold;
-}
-
-.search{
-padding:25px;
-text-align:center;
-}
-
-.search input{
-width:90%;
-max-width:700px;
-padding:16px;
-border-radius:40px;
-border:2px solid #2563EB;
-font-size:17px;
-outline:none;
-}
-
-.section-title{
-text-align:center;
-margin-top:35px;
-font-size:28px;
-color:#0F172A;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-top:15px;
-}
-
-.card p{
-margin-top:10px;
-font-size:14px;
-}
-
-.card button{
-margin-top:18px;
-padding:10px 20px;
-border:none;
-background:#2563EB;
-color:white;
-border-radius:8px;
-cursor:pointer;
-}
-
-footer{
-background:#0F172A;
-color:white;
-text-align:center;
-padding:35px;
-margin-top:40px;
-}
-
-</style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="logo">KATARIYA RESULT</div>
-
-<div class="tagline">
-India's Fastest Education Updates
-</div>
-
+<div class="tagline">India's Fastest Education Updates</div>
 </header>
 
 <nav>
-
-<a href="#">Home</a>
-
-<a href="#">Latest Result</a>
-
-<a href="#">Latest Jobs</a>
-
-<a href="#">Admit Card</a>
-
-<a href="#">Answer Key</a>
-
-<a href="#">Syllabus</a>
-
-<a href="#">Scholarship</a>
-
-<a href="#">Contact</a>
-
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Latest Result</a></li>
+<li><a href="#">Latest Jobs</a></li>
+<li><a href="#">Admit Card</a></li>
+<li><a href="#">Answer Key</a></li>
+<li><a href="#">Syllabus</a></li>
+<li><a href="#">Scholarship</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 </nav>
 
 <section class="hero">
-
 <h1>Welcome to Katariya Result</h1>
-
 <p>India's Premium Education Portal</p>
-
-<button>Explore Now</button>
-
+<a href="#latest" class="hero-btn">Explore Now</a>
 </section>
 
-<div class="breaking">
-
+<div class="news">
 <marquee>
 🔥 Rajasthan Police Result | REET | SSC | Railway | UPSC | Latest Government Jobs | Admit Card | Scholarship Updates
 </marquee>
-
 </div>
 
 <div class="search">
-
 <input type="text" placeholder="Search Result, Jobs, Admit Card...">
+</div>
 
+<h2 class="section-title" id="latest">Latest Updates</h2>
 
-</div><footer>
+<div class="cards">
+
+<div class="card">
+<h3>📢 Latest Results</h3>
+<p>Check all latest board, university and government exam results.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>💼 Latest Jobs</h3>
+<p>Find the newest government and private job notifications.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>🎫 Admit Card</h3>
+<p>Download admit cards for all competitive examinations.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>📄 Answer Key</h3>
+<p>Download official answer keys and response sheets.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>📚 Syllabus</h3>
+<p>Latest syllabus and exam pattern for all recruitments.</p>
+<button>View</button>
+</div>
+
+<div class="card">
+<h3>🎓 Scholarship</h3>
+<p>Apply online for central and state scholarship schemes.</p>
+<button>View</button>
+</div>
+
+</div>
+
+<footer>
 
 <h2>Katariya Result</h2>
 
@@ -256,43 +111,7 @@ About Us | Contact Us | Privacy Policy | Disclaimer
 
 <button id="topBtn">⬆</button>
 
-<script>
-
-const topBtn=document.getElementById("topBtn");
-
-window.onscroll=function(){
-
-if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
-topBtn.style.display="block";
-}else{
-topBtn.style.display="none";
-}
-
-}
-
-topBtn.onclick=function(){
-
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-
-}
-
-function updateTime(){
-
-const d=new Date();
-
-let t=d.toLocaleTimeString();
-
-document.title="Katariya Result | "+t;
-
-}
-
-setInterval(updateTime,1000);
-
-</script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
