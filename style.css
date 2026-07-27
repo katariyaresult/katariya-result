@@ -681,7 +681,11 @@ nav ul{
     transform:scale(1.05);
 
 }
-
+.logo-img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
 
 @media(max-width:600px){
 
