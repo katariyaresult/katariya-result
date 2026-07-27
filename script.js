@@ -1,1 +1,1 @@
-// Katariya Result Premium JavaScript
+console.log("Katariya Result Premium Loaded");
