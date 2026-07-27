@@ -553,46 +553,7 @@ nav ul{
 }
 
 }
-/* Social Media Buttons */
 
-.card a{
-    text-decoration:none;
-}
-
-
-.card a button{
-
-    width:180px;
-    padding:12px 20px;
-    border:none;
-    border-radius:30px;
-    background:linear-gradient(135deg,#0066ff,#00c6ff);
-    color:white;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
-
-}
-
-
-.card a button:hover{
-
-    transform:translateY(-3px);
-    background:linear-gradient(135deg,#0044aa,#0099cc);
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-}
-
-
-/* Contact Form Input */
-
-.card input,
-.card textarea{
-
-    width:90%;
-    padding:12px;
-    border:1px solid #ddd;
     border-radius:10px;
     font-size:15px;
     outline:none;
@@ -613,4 +574,36 @@ nav ul{
 
     border-color:#0066ff;
 
+}
+.social-section{
+    margin:40px 0;
+}
+
+
+.social-section .card{
+    max-width:400px;
+    margin:auto;
+}
+
+
+.social-section a{
+    text-decoration:none;
+}
+
+
+.social-section button{
+    width:200px;
+    padding:12px;
+    background:linear-gradient(135deg,#0066ff,#00c6ff);
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+.social-section button:hover{
+    background:#0044aa;
 }
