@@ -11,9 +11,11 @@ heroBtn.addEventListener("click", function(e){
     let latest = document.querySelector("#latest");
 
     if(latest){
+
         latest.scrollIntoView({
             behavior:"smooth"
         });
+
     }
 
 });
@@ -29,13 +31,19 @@ let topBtn = document.getElementById("topBtn");
 
 if(topBtn){
 
+
 window.onscroll = function(){
 
     if(document.documentElement.scrollTop > 300){
+
         topBtn.style.display="block";
+
     }
+
     else{
+
         topBtn.style.display="none";
+
     }
 
 };
@@ -57,13 +65,16 @@ topBtn.onclick = function(){
 
 topBtn.style.display="none";
 
+
 }
+
 
 
 
 // Search Function
 
 let searchBox = document.querySelector(".search input");
+
 
 let items = document.querySelectorAll(
 ".card, .answer-box, .result-box, .job-box, .admit-box"
@@ -73,35 +84,44 @@ let items = document.querySelectorAll(
 
 if(searchBox){
 
+
 searchBox.addEventListener("keyup",function(){
 
 
-    let value = searchBox.value.toLowerCase();
+let value = searchBox.value.toLowerCase();
 
 
-    items.forEach(function(item){
+
+items.forEach(function(item){
 
 
-        let text = item.innerText.toLowerCase();
+let text = item.innerText.toLowerCase();
 
 
-        if(text.includes(value)){
 
-            item.style.display="block";
-
-        }
-
-        else{
-
-            item.style.display="none";
-
-        }
+if(text.includes(value)){
 
 
-    });
+item.style.display="block";
+
+
+}
+
+else{
+
+
+item.style.display="none";
+
+
+}
+
 
 
 });
+
+
+});
+
 
 }
 
@@ -110,10 +130,7 @@ searchBox.addEventListener("keyup",function(){
 
 // Button Click Alert
 
-let buttons = document.querySelectorAll(
-".card button"
-);
-
+let buttons = document.querySelectorAll(".card button");
 
 
 buttons.forEach(function(btn){
