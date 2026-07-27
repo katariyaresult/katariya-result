@@ -366,3 +366,65 @@ nav ul{
 }
 
 }
+/* Jobs Page Design */
+
+.job-list{
+    width:85%;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+.job-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.job-box h3{
+    color:#0066ff;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+
+.job-box p{
+    color:#555;
+    margin:8px 0;
+    line-height:1.6;
+}
+
+
+.job-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#0066ff;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:600;
+}
+
+
+.job-btn:hover{
+    background:#0044aa;
+}
+
+
+
+@media(max-width:600px){
+
+.job-list{
+    width:95%;
+}
+
+.job-box h3{
+    font-size:20px;
+}
+
+}
