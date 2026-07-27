@@ -1,0 +1,1 @@
+// Katariya Result Premium JavaScript
