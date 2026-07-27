@@ -5,118 +5,85 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Katariya Result | India's Fastest Education Updates</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-font-family:Poppins,sans-serif;
-background:#08111f;
-color:#fff;
+background:#f4f8ff;
 }
 
 header{
-background:linear-gradient(90deg,#0f172a,#1d4ed8,#f59e0b);
+background:#0f172a;
+color:white;
 padding:20px;
 text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.5);
 }
 
 header h1{
-font-size:34px;
-letter-spacing:2px;
+font-size:32px;
+color:#fbbf24;
 }
 
 header p{
-margin-top:8px;
-font-size:15px;
+margin-top:5px;
+font-size:14px;
 }
 
-marquee{
-background:#f59e0b;
-color:#000;
+.news{
+background:red;
+color:white;
 padding:10px;
 font-weight:bold;
+overflow:hidden;
+white-space:nowrap;
 }
 
-nav{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-background:#111827;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-padding:15px 20px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-background:#2563eb;
+.news marquee{
+font-size:16px;
 }
 
 .search{
-padding:30px;
+padding:20px;
 text-align:center;
 }
 
 .search input{
 width:90%;
-max-width:600px;
-padding:15px;
-border:none;
-border-radius:50px;
-font-size:17px;
+max-width:500px;
+padding:14px;
+border-radius:30px;
+border:2px solid #2563eb;
+font-size:16px;
 }
 
-.grid{
+.menu{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-padding:25px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:20px;
 }
 
 .card{
-background:#111827;
-border-radius:18px;
+background:white;
 padding:20px;
-transition:.4s;
-border:1px solid rgba(255,255,255,.1);
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px #2563eb;
-}
-
-.card h2{
-color:#fbbf24;
-margin-bottom:10px;
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:12px 18px;
 background:#2563eb;
 color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-
-footer{
-margin-top:40px;
-padding:30px;
-text-align:center;
-background:#020617;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
@@ -124,58 +91,24 @@ background:#020617;
 <p>India's Fastest Education Updates</p>
 </header>
 
+<div class="news">
 <marquee>
-🔥 Rajasthan Police Result | REET Admit Card | SSC | UPSC | Railway | Latest Jobs | Answer Key | Scholarship
+🔥 Welcome to Katariya Result | Latest Results | Jobs | Admit Card | Answer Key | Scholarship Updates
 </marquee>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Latest Result</a>
-<a href="#">Jobs</a>
-<a href="#">Admit Card</a>
-<a href="#">Answer Key</a>
-<a href="#">Contact</a>
-</nav>
+</div>
 
 <div class="search">
-<input type="text" placeholder="Search Result, Jobs, Admit Card...">
+<input type="text" placeholder="Search Results, Jobs...">
 </div>
 
-<div class="grid">
-
-<div class="card">
-<h2>📢 Latest Result</h2>
-<p>Check all latest government exam results.</p>
-<a href="#" class="btn">View Result</a>
+<div class="menu">
+<div class="card">📢 Latest Results</div>
+<div class="card">💼 Latest Jobs</div>
+<div class="card">🎫 Admit Card</div>
+<div class="card">📄 Answer Key</div>
+<div class="card">📚 Syllabus</div>
+<div class="card">🎓 Scholarship</div>
 </div>
-
-<div class="card">
-<h2>💼 Latest Jobs</h2>
-<p>All Government & Private Jobs Updates.</p>
-<a href="#" class="btn">View Jobs</a>
-</div>
-
-<div class="card">
-<h2>🎫 Admit Card</h2>
-<p>Download latest admit cards.</p>
-<a href="#" class="btn">Download</a>
-</div>
-
-<div class="card">
-<h2>📄 Answer Key</h2>
-<p>Official Answer Keys available here.</p>
-<a href="#" class="btn">Open</a>
-</div>
-
-</div>
-
-<footer>
-
-<h3>KATARIYA RESULT</h3>
-
-<p>© 2026 All Rights Reserved.</p>
-
-</footer>
 
 </body>
 </html>
