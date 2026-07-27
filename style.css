@@ -281,7 +281,30 @@ nav ul{
     font-size:30px;
     margin-bottom:15px;
 }
+/* Page Banner */
 
+.page-banner{
+    background:linear-gradient(135deg,#0066ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.page-banner h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.page-banner p{
+    font-size:18px;
+}
+
+
+/* Result Page Button */
+
+.card button{
+    cursor:pointer;
+}
 .about p{
     color:#555;
     line-height:1.8;
