@@ -28,15 +28,21 @@ heroBtn.addEventListener("click", function(e){
 
 let topBtn = document.getElementById("topBtn");
 
+
 if(topBtn){
+
+
+topBtn.style.display="none";
+
 
 window.onscroll = function(){
 
-    if(document.documentElement.scrollTop > 300){
+    if(document.documentElement.scrollTop > 200){
 
         topBtn.style.display="block";
 
     }
+
     else{
 
         topBtn.style.display="none";
@@ -60,9 +66,9 @@ topBtn.onclick = function(){
 };
 
 
-topBtn.style.display="none";
-
 }
+
+
 
 
 
@@ -70,56 +76,70 @@ topBtn.style.display="none";
 
 let searchBox = document.querySelector(".search input");
 
+
+if(searchBox){
+
+
 let items = document.querySelectorAll(
-".card, .answer-box, .result-box, .job-box, .admit-box"
+".card, .result-box, .job-box, .admit-box, .answer-box"
 );
 
 
 
-if(searchBox){
-
 searchBox.addEventListener("keyup",function(){
 
-    let value = searchBox.value.toLowerCase();
+
+let value = searchBox.value.toLowerCase();
 
 
-    items.forEach(function(item){
 
-        let text = item.innerText.toLowerCase();
+items.forEach(function(item){
 
 
-        if(text.includes(value)){
+let text = item.innerText.toLowerCase();
 
-            item.style.display="block";
 
-        }
-        else{
 
-            item.style.display="none";
+if(text.includes(value)){
 
-        }
+item.style.display="block";
 
-    });
+}
+
+else{
+
+item.style.display="none";
+
+}
 
 
 });
+
+
+});
+
 
 }
 
 
 
 
+
 // Button Click Alert
 
-let buttons = document.querySelectorAll(".card button");
+let buttons = document.querySelectorAll(".card button, .answer-btn, .admit-btn, .job-btn, .result-btn");
 
 
 buttons.forEach(function(btn){
 
-    btn.addEventListener("click",function(){
 
-        alert("Latest update page will be available soon!");
+btn.addEventListener("click",function(){
 
-    });
+
+alert("Latest update page will be available soon!");
+
+
+});
+
 
 });
