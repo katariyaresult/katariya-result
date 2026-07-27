@@ -607,3 +607,88 @@ nav ul{
 .social-section button:hover{
     background:#0044aa;
 }
+/* Social Section Fix */
+
+.social-section{
+    width:100%;
+    padding:40px 0;
+}
+
+
+.social-section .cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.social-section .card{
+
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+.social-section .card h3{
+
+    color:#0066ff;
+    font-size:25px;
+    margin-bottom:15px;
+
+}
+
+
+.social-section .card p{
+
+    color:#555;
+    line-height:1.6;
+
+}
+
+
+.social-section .card a{
+
+    display:block;
+    text-decoration:none;
+    margin:12px 0;
+
+}
+
+
+.social-section .card a button{
+
+    width:220px;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#0066ff,#00c6ff);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+
+}
+
+
+.social-section .card a button:hover{
+
+    background:#0044aa;
+    transform:scale(1.05);
+
+}
+
+
+@media(max-width:600px){
+
+.social-section .card{
+
+    width:90%;
+
+}
+
+}
