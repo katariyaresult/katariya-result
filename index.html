@@ -233,4 +233,66 @@ India's Fastest Education Updates
 
 <input type="text" placeholder="Search Result, Jobs, Admit Card...">
 
-</div>
+
+</div><footer>
+
+<h2>Katariya Result</h2>
+
+<p>India's Fastest Education Updates</p>
+
+<br>
+
+<p>
+About Us | Contact Us | Privacy Policy | Disclaimer
+</p>
+
+<br>
+
+<p>
+© 2026 Katariya Result. All Rights Reserved.
+</p>
+
+</footer>
+
+<button id="topBtn">⬆</button>
+
+<script>
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
+topBtn.style.display="block";
+}else{
+topBtn.style.display="none";
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+function updateTime(){
+
+const d=new Date();
+
+let t=d.toLocaleTimeString();
+
+document.title="Katariya Result | "+t;
+
+}
+
+setInterval(updateTime,1000);
+
+</script>
+
+</body>
+
+</html>
