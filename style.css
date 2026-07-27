@@ -490,3 +490,66 @@ nav ul{
 }
 
 }
+/* Answer Key Page Design */
+
+.answer-list{
+    width:85%;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+.answer-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.answer-box h3{
+    color:#0066ff;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+
+.answer-box p{
+    color:#555;
+    margin:8px 0;
+    line-height:1.6;
+}
+
+
+.answer-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#0066ff;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:600;
+}
+
+
+.answer-btn:hover{
+    background:#0044aa;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.answer-list{
+    width:95%;
+}
+
+.answer-box h3{
+    font-size:20px;
+}
+
+}
