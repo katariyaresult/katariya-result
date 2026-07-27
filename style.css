@@ -307,3 +307,64 @@ nav ul{
     color:#555;
     line-height:1.8;
 }
+/* Result Page Design */
+
+.result-list{
+    width:85%;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+.result-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.result-box h3{
+    color:#0066ff;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+
+.result-box p{
+    color:#555;
+    margin:8px 0;
+}
+
+
+.result-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#0066ff;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:600;
+}
+
+
+.result-btn:hover{
+    background:#0044aa;
+}
+
+
+
+@media(max-width:600px){
+
+.result-list{
+    width:95%;
+}
+
+.result-box h3{
+    font-size:20px;
+}
+
+}
