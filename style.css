@@ -140,3 +140,89 @@ footer h2{
 color:#FFC107;
 margin-bottom:10px;
 }
+.news{
+background:#dc2626;
+color:#fff;
+padding:12px;
+font-weight:bold;
+}
+
+.search{
+padding:25px;
+text-align:center;
+}
+
+.search input{
+width:90%;
+max-width:700px;
+padding:15px;
+border:2px solid #2563eb;
+border-radius:40px;
+font-size:16px;
+outline:none;
+}
+
+.section-title{
+text-align:center;
+font-size:30px;
+margin:40px 0 20px;
+color:#0f172a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(37,99,235,.25);
+}
+
+.card h3{
+margin:15px 0;
+}
+
+.card button{
+background:#2563eb;
+color:#fff;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#0f172a;
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.logo{
+font-size:28px;
+}
+
+}
